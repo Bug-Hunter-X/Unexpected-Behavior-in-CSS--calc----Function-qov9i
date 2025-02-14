@@ -1,0 +1,29 @@
+/* bugSolution.css */
+
+/* Correct use of calc() with consistent units */
+.element {
+  width: calc(100% - 20px);
+}
+
+/* Correct use of calc() with parentheses for order of operations */
+.element2 {
+  width: calc((100% - 20px) / 2);
+}
+
+/* Corrected expression and explicit unit specification */
+.element3 {
+  height: calc(100vh - 50px);
+}
+
+/* Handles potential browser compatibility issues with fallback */
+.element4 {
+  width: calc(100% - 20px);
+  width: 80%; /* fallback for older browsers */
+}
+
+/* Explanation:
+   - Ensure consistent units within calc() expressions.
+   - Use parentheses to control the order of operations in complex calculations.
+   - Provide fallback styles for older browsers with limited calc() support.
+   - Always test across different browsers and devices.
+*/
